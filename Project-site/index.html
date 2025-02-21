@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITso - Innovate</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- <header>
+    <div class="logo-img">
+        <img src="Images/image_2025-01-06_231302132-removebg-preview.png" alt="Logo">
+    </div>
+    <div class="logo">ITso</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book Online</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <!-- <header>
+    <div class="logo">
+      <a href="#">
+        <img src="Images/image_2025-01-06_231302132-removebg-preview.png" alt="ITso Logo">
+        <span>ITso</span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#book">Book Online</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="Images/image_2025-01-06_231302132-removebg-preview.png" alt="ITso Logo">
+        <span>ITso</span>
+      </a>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#book">Book Online</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <div class="container">
+    <!-- <div class="hero">
+      <h1 class="hero-title">Innovate</h1>
+      <div class="hero-block">
+        <div class="hero-text">
+            <p class="hero-description">Welcome to ITso, your go-to IT specialist for cutting-edge software solutions. Explore our range of services, experience live software demonstrations, and take the first step towards transforming your digital landscape.</p>
+        </div>
+        <div class="hero-image">
+            <img src="Images/Phones.webp" alt="Phone Mockup">
+        </div>
+      </div>
+    </div> -->
+     <section class="hero">
+        <h1 class="hero-title">Innovate</h1>
+        <div class="hero-content">
+          <p class="hero-description">Welcome to ITso, your go-to IT specialist for cutting-edge software solutions. Explore our range of services, experience live software demonstrations, and take the first step towards transforming your digital landscape.</p>
+          <div class="hero-image">
+            <img src="Images/Phones.webp" alt="Phone Mockup">
+          </div>
+        </div>
+      </section>
+      
+      
+
+    <div class="services" id="book">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Software Development</h3>
+          <hr>
+          <p>500 ш.ц.</p>
+          <a class="btn" onclick="MyFunc()">View Course</a>
+        </div>
+        <div class="card">
+          <h3>Software Consultation</h3>
+          <hr>
+          <p>150 ш.ц.</p>
+          <a class="btn" onclick="MyFunc()">Book Now</a>
+        </div>
+        <div class="card">
+          <h3>Software Maintenance</h3>
+          <hr>
+          <p>100 ш.ц.</p>
+          <a class="btn" onclick="MyFunc()">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="clients">
+      <div class="clients-content">
+        <h2>Our Clients</h2>
+        <div class="client-logos">
+          <div>gaze<span>it</span></div>
+          <div>mtvs.<span>news</span></div>
+          <div>glimp.<span>it</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <hr>
+    <div class="footer-info">
+      <div class="footer-logo">
+       <p>ITso</p>
+      </div>
+      <div class="footer-description">
+        <p>123-456-7890</p>
+        <p>info@mysite.com</p>
+        <p>500 Terry Francine Street, 6th Floor, San Francisco, CA 94158</p>
+      </div>
+    </div>
+    <div class="newsletter">
+      <p>Stay Connected with ITso</p>
+      <form>
+        <input type="email" placeholder="Enter Your Email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+<script>
+// Select elements
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+// Add click event to toggle menu
+menuToggle.addEventListener("click", () => {
+  console.log("Hamburger menu clicked"); // Confirm the click event fires
+  navLinks.classList.toggle("active"); // Toggle the 'active' class
+  console.log("Menu state:", navLinks.classList.contains("active")); // Log the menu's active state
+});
+
+
+  function MyFunc(){
+    alert("This service has expired. Please come back later.");
+  }
+
+</script>  
+</body>
+</html>
